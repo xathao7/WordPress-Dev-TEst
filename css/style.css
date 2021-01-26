@@ -1,0 +1,176 @@
+/*====== Adding Fonts ============================ */
+@font-face {
+  src: url(fonts/Space_Mono/SpaceMono-Bold.ttf);
+  font-family: SpaceMono-Bold;
+  src: url(fonts/Space_Mono/SpaceMono-BoldItalic.ttf);
+  font-family: SpaceMono-BoldItalic;
+  src: url(fonts/Space_Mono/SpaceMono-Italic.ttf);
+  font-family: SpaceMono-Italic;
+  src: url(fonts/Space_Mono/SpaceMono-Regular.ttf);
+  font-family: SpaceMono-Regular;
+}
+
+@font-face {
+  src: url(fonts/Work_Sans/WorkSans-Black.ttf);
+  font-family: Sans-Black;
+  src: url(fonts/Work_Sans/WorkSans-Bold.ttf);
+  font-family: Sans-Bold;
+  src: url(fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+  font-family: Sans-ExtraBold;
+  src: url(fonts/Work_Sans/WorkSans-ExtraLight.ttf);
+  font-family: Sans-ExtraLight;
+  src: url(fonts/Work_Sans/WorkSans-Light.ttf);
+  font-family: Sans-Light;
+  src: url(fonts/Work_Sans/WorkSans-Medium.ttf);
+  font-family: Sans-Medium;
+  src: url(fonts/Work_Sans/WorkSans-Regular.ttf);
+  font-family: Sans-Regular;
+  src: url(fonts/Work_Sans/WorkSans-SemiBold.ttf);
+  font-family: Sans-SemiBold;
+  src: url(fonts/Work_Sans/WorkSans-Thin.ttf);
+  font-family: Sans-Thin;
+}
+
+/*=========== End Adding Fonts =============*/
+
+/*===== change page background color ===========*/
+body{
+  background-color: #fefaff  !important;
+}
+
+/*======= Top header backgrond color =====*/
+.top-header{
+  background-color: #525659 !important;
+  padding: 50px !important;
+}
+
+/*===== nav bar ======*/
+.nav{
+  padding: 20px !important;
+}
+
+
+/*====== Header Styling =======*/
+.header-title{
+  background-color: #4f105c !important;
+  padding: 30px 0px 30px 0px !important;
+  text-align: center !important;
+  background-image: url('/images/triangle.svg'),url('/images/circle.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 70% bottom , 70% bottom;
+
+}
+
+
+.headText{
+  color: white !important;
+  font-family: SpaceMono-Regular !important;
+  font-size: 62px !important;
+}
+
+.headTestWeb{
+ font-family: SpaceMono-BoldItalic !important;
+  background-color: #f56a2a !important;
+    background-image: linear-gradient(45deg, #f56a2a, #a90bb0) !important;
+    background-size: 100% !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -moz-text-fill-color: transparent !important ;
+    font-size: 62px !important;
+}
+
+
+/* ===== Table content styling =====*/
+.podSection{
+    width: 80% !important;
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff !important;
+    border-radius: 5px;
+    box-shadow: rgba(242,218,246,1)!important;
+}
+
+.column {
+  float: left !important;
+  width: 33.33% !important;
+  margin-bottom: 100px;
+}
+
+.row{
+      width: 60%!important;
+      margin: 50px !important;
+      align-items: center !important;
+      display: flex !important;
+      justify-content: center !important;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "" !important;
+  display: table !important;
+  clear: both !important;
+
+}
+
+/* ====== sytling table  text ===*/
+h3.title{
+  font-size: 36px;
+  font-family: Sans-SemiBold;
+  padding-bottom: 15px;
+}
+
+h4.publisher{
+  font-size: 18px;
+  font-family: SpaceMono-Regular;
+  color: #9c07b2 !important;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+h5.episodes, .episodes:after{
+  font-size: 18px;
+  font-family: SpaceMono-Regular;
+  margin: 0px;
+    content:" episodes";
+}
+
+
+.social-icon{
+  color: #777777;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 18px;
+  line-height: 1.5em;
+  padding: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ .column {
+   width: 100% !important;
+ }
+ .row {
+   width: 100% !important;
+   float: left;
+ }
+
+ .title,.publisher{
+   padding-bottom: none !important;
+
+ }
+
+ .description{
+   padding: 0px !important;
+   margin: 0px;
+ }
+ .social-icon{
+   display: flex-root !important;
+   padding: 0px !important;
+   margin: 0px !important;
+ }
+}

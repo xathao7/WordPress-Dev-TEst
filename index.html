@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Code Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
   </head>
   <body>
     <div class="top">
@@ -11,21 +13,25 @@
       </div>
       <div class="nav">
   <nav class="navbar">
-    <img src="images/menu-img.png" alt="hambuger-menu" class="ham-img">
+    <i class="fas fa-2x fa-bars"></i>
   </nav>
       </div>
     </div>
     <header class="header-title">
-      <div class="image-stack-top">
-        <img src="images/circle.svg" alt="circle">
-      </div>
       <h1><span class="headText">Top 5</span>
         <span class="headTestWeb"> Web Design</span>
         <span class="headText"> Podcasts</span></h1>
-        <div class="image-stack">
-  <div class="image-stack-bottom">
-    <img src="images/triangle.svg" alt="">
-  </div>
     </header>
+    <script type="text/javascript">
+        //getting data from json file
+        fetch('sample-api-response.json');
+          //convert data to json
+          .then(response => response.json())
+          .then(data =>){
+            console.log(data);
+            document.querySelector('#debug').innerText = data.sentence
+          }
+
+    </script>
   </body>
 </html>

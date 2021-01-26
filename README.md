@@ -1,2 +1,2 @@
-# WordPress-Dev-TEst
+# WordPress-Dev-Test
 Creed Interactive Code Test

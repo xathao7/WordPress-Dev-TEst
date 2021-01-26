@@ -28,6 +28,7 @@
         $output = "<div class='row'>";
         foreach($json['podcasts'] as $podcast ){
         //first column displaying images
+        $output .= "<section class='podSection'>";
         $output .= "<div class='column'>";
         $output .= "<span>".$podcast['image']."</span>";
         $output .= "</div>";
@@ -45,6 +46,7 @@
         $output .= "<div class='column'>";
         $output .= "<p class='description'>".$podcast['description']."</p>";
         $output .= "</div>";
+        $output .= "</section>";
         }
         $output.="</div>";
         echo $output;

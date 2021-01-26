@@ -84,11 +84,16 @@ body{
 /* ===== Table content styling =====*/
 .podSection{
     width: 80% !important;
-    margin: auto;
-    padding: 50px;
     background-color: #ffffff !important;
-    border-radius: 5px;
-    box-shadow: rgba(242,218,246,1)!important;
+    border-radius: 1px;
+    box-shadow: 0px 0px 10px 5px rgba(242,218,246,1)!important;
+    top: 50%;
+    left: 10%;
+    padding: 50px 20px 0px 20px !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+
 }
 
 .column {
@@ -100,10 +105,6 @@ body{
 .row{
       width: 60%!important;
       margin: 50px !important;
-      align-items: center !important;
-      display: flex !important;
-      justify-content: center !important;
-
 }
 
 /* Clear floats after the columns */
@@ -156,8 +157,20 @@ h5.episodes, .episodes:after{
  }
  .row {
    width: 100% !important;
-   float: left;
  }
+
+ .podSection{
+   width: 100% !important;
+   top: 0% !important;
+   left: 0% !important;
+   padding: 50px 20px 0px 20px !important;
+   margin-top: 50px!important;
+   margin-bottom: 50px !important;
+   margin-left: 0px !important;
+   margin-right: 50px !important;
+
+ }
+
 
  .title,.publisher{
    padding-bottom: none !important;

@@ -1,33 +1,56 @@
 /*====== Adding Fonts ============================ */
 @font-face {
-  src: url(fonts/Space_Mono/SpaceMono-Bold.ttf);
+  src: url(../fonts/Space_Mono/SpaceMono-Bold.ttf);
   font-family: SpaceMono-Bold;
-  src: url(fonts/Space_Mono/SpaceMono-BoldItalic.ttf);
+}
+@font-face {
+  src: url(../fonts/Space_Mono/SpaceMono-BoldItalic.ttf);
   font-family: SpaceMono-BoldItalic;
-  src: url(fonts/Space_Mono/SpaceMono-Italic.ttf);
+}
+@font-face {
+  src: url(../fonts/Space_Mono/SpaceMono-Italic.ttf);
   font-family: SpaceMono-Italic;
-  src: url(fonts/Space_Mono/SpaceMono-Regular.ttf);
+}
+@font-face {
+  src: url(../fonts/Space_Mono/SpaceMono-Regular.ttf);
   font-family: SpaceMono-Regular;
 }
 
 @font-face {
-  src: url(fonts/Work_Sans/WorkSans-Black.ttf);
+  src: url(../fonts/Work_Sans/WorkSans-Black.ttf);
   font-family: Sans-Black;
-  src: url(fonts/Work_Sans/WorkSans-Bold.ttf);
+}
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-Bold.ttf);
   font-family: Sans-Bold;
-  src: url(fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+}
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-ExtraBold.ttf);
   font-family: Sans-ExtraBold;
-  src: url(fonts/Work_Sans/WorkSans-ExtraLight.ttf);
+}
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-ExtraLight.ttf);
   font-family: Sans-ExtraLight;
-  src: url(fonts/Work_Sans/WorkSans-Light.ttf);
+}
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-Light.ttf);
   font-family: Sans-Light;
-  src: url(fonts/Work_Sans/WorkSans-Medium.ttf);
+}
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-Medium.ttf);
   font-family: Sans-Medium;
-  src: url(fonts/Work_Sans/WorkSans-Regular.ttf);
+}
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-Regular.ttf);
   font-family: Sans-Regular;
-  src: url(fonts/Work_Sans/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+  src: url(../fonts/Work_Sans/WorkSans-SemiBold.ttf);
   font-family: Sans-SemiBold;
-  src: url(fonts/Work_Sans/WorkSans-Thin.ttf);
+}
+@font-face {
+  src: url(../ffonts/Work_Sans/WorkSans-Thin.ttf);
   font-family: Sans-Thin;
 }
 
@@ -36,6 +59,10 @@
 /*===== change page background color ===========*/
 body{
   background-color: #fefaff  !important;
+}
+
+a{
+  text-decoration: none !important;
 }
 
 /*======= Top header backgrond color =====*/
@@ -57,7 +84,7 @@ body{
   text-align: center !important;
   background-image: url('/images/triangle.svg'),url('/images/circle.svg');
   background-repeat: no-repeat, no-repeat;
-  background-position: 70% bottom , 70% bottom;
+  background-position: 76% bottom , 76% bottom;
 
 }
 
@@ -92,7 +119,7 @@ body{
     padding: 50px 20px 0px 20px !important;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 500px;
+    margin-left: 450px;
 
 }
 
@@ -103,8 +130,8 @@ body{
 }
 
 .row{
-      width: 60%!important;
-      margin: 50px !important;
+      width: 70%!important;
+      margin: 70px !important;
 }
 
 /* Clear floats after the columns */
@@ -115,7 +142,30 @@ body{
 
 }
 
+
 /* ====== sytling table  text ===*/
+.count{
+  width: 20% !important;
+  margin-left: -300px;
+  background: transparent url('/images/circle.svg') no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.number{
+  font-size: 36px !important;
+  text-align: center;
+  font-family:  SpaceMono-BoldItalic !important;;
+  color: #ffffff!important;
+
+}
+
+
+.podImg{
+  margin-left: -70px!important;
+  border: 1px solid #fefaff;
+}
+
+
 h3.title{
   font-size: 36px;
   font-family: Sans-SemiBold;
@@ -129,6 +179,15 @@ h4.publisher{
   padding-bottom: 15px;
   margin: 0px;
 }
+.publisher:before{
+  content: 'by ';
+  font-size: 18px;
+  font-family: SpaceMono-Regular;
+  color: #9c07b2 !important;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
 h5.episodes, .episodes:after{
   font-size: 18px;
   font-family: SpaceMono-Regular;
@@ -150,13 +209,30 @@ h5.episodes, .episodes:after{
 }
 
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
  .column {
    width: 100% !important;
+   float: none !important;
  }
  .row {
    width: 100% !important;
+ }
+
+ .count{
+   width: 20% !important;
+   margin-left: -30px;
+   margin-top: -70px!important;
+   background: transparent url('/images/circle.svg') no-repeat;
+   background-position: left;
+   background-size: cover;
+ }
+ .number{
+   font-size: 36px !important;
+   text-align: center;
+   font-family:  SpaceMono-BoldItalic !important;;
+   color: #ffffff!important;
+
  }
 
  .podSection{
@@ -167,10 +243,9 @@ h5.episodes, .episodes:after{
    margin-top: 50px!important;
    margin-bottom: 50px !important;
    margin-left: 0px !important;
-   margin-right: 50px !important;
+   margin-right: 90px !important;
 
  }
-
 
  .title,.publisher{
    padding-bottom: none !important;
@@ -187,3 +262,60 @@ h5.episodes, .episodes:after{
    margin: 0px !important;
  }
 }
+
+/*=== Media Query for Specific width =======*/
+@media only screen and (max-width: 1000px) and (min-width: 500px)  {
+  .podImg{
+    margin-left: -170px!important;
+    border: 1px solid #fefaff;
+  }
+  }
+
+/*=== Media Query for Specific width =======*/
+@media only screen and (max-width: 600px) and (min-width: 320px)  {
+  .podImg{
+    margin-left: -50px!important;
+    border: 1px solid #fefaff;
+  }
+
+  .column {
+    width: 100% !important;
+  }
+  .row {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+
+  }
+
+  @media only screen and (max-width: 1300px) and (min-width: 600px)  {
+    .podImg{
+      margin-left: -50px!important;
+      border: 1px solid #fefaff;
+    }
+
+    .column {
+      width: 100% !important;
+    }
+    .row {
+      width: 70% !important;
+      margin-left: -250px !important;
+    }
+
+    .count{
+      width: 20% !important;
+      margin-left: 0px !important;
+      margin-top: -70px!important;
+      background: transparent url('/images/circle.svg') no-repeat;
+      background-position: left;
+      background-size: cover;
+    }
+    .number{
+      font-size: 36px !important;
+      text-align: center;
+      font-family:  SpaceMono-BoldItalic !important;;
+      color: #ffffff!important;
+
+    }
+
+    }

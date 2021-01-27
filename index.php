@@ -18,19 +18,21 @@
       </div>
     </div>
     <header class="header-title">
-      <h1><span class="headText">Top 5</span>
-        <span class="headTestWeb"> Web Design</span>
+      <h1><span class="headText">Top 5 </span>
+        <span class="headTestWeb"> Web Design </span>
         <span class="headText"> Podcasts</span></h1>
     </header>
     <?php
         $jsondata = file_get_contents("sample-api-response.json");
         $json = json_decode($jsondata, true);
+        $count = 1;
         $output = "<div class='row'>";
         foreach($json['podcasts'] as $podcast ){
         //first column displaying images
         $output .= "<section class='podSection'>";
+        $output .= "<div class='count'><h2 class='number'>" .$count . "</h2></div>";
         $output .= "<div class='column'>";
-        $output .= "<span>".$podcast['image']."</span>";
+        $output .= "<span><img class='podImg' src='".$podcast['image']."' /></span>";
         $output .= "</div>";
         //2nd column displaying(title,author,ep, and social icon)
         $output .= "<div class='column'>";
@@ -47,6 +49,7 @@
         $output .= "<p class='description'>".$podcast['description']."</p>";
         $output .= "</div>";
         $output .= "</section>";
+        $count++;
         }
         $output.="</div>";
         echo $output;

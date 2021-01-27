@@ -152,6 +152,9 @@ a{
   background-size: contain;
   padding: 40px!important;
 }
+
+
+/* ====== sytling number section ===*/
 .number{
   font-size: 36px !important;
   text-align: center;
@@ -160,19 +163,20 @@ a{
   margin-left: -75px!important
 }
 
-
+/* ====== sytling podcast image ===*/
 .podImg{
   margin-left: -70px!important;
   border: 1px solid #fefaff;
 }
 
-
+/* ====== sytling podcast title ===*/
 h3.title{
   font-size: 36px;
   font-family: Sans-SemiBold;
   padding-bottom: 15px;
 }
 
+/* ====== sytling podcast publisher text ===*/
 h4.publisher{
   font-size: 18px;
   font-family: SpaceMono-Regular;
@@ -189,6 +193,7 @@ h4.publisher{
   margin: 0px;
 }
 
+/* ====== sytling podcast episodeds text ===*/
 h5.episodes, .episodes:after{
   font-size: 18px;
   font-family: SpaceMono-Regular;
@@ -196,13 +201,14 @@ h5.episodes, .episodes:after{
     content:" episodes";
 }
 
-
+/* ====== sytling podcast social icon  ===*/
 .social-icon{
   color: #777777;
   padding: 10px;
   font-weight: bold;
 }
 
+/* ====== sytling podcast description ===*/
 .description{
   font-size: 18px;
   line-height: 1.5em;

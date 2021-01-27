@@ -23,10 +23,13 @@
         <span class="headText"> Podcasts</span></h1>
     </header>
     <?php
+        //Getting the json file
         $jsondata = file_get_contents("sample-api-response.json");
+        //getting Json data and convert to an array
         $json = json_decode($jsondata, true);
         $count = 1;
         $output = "<div class='row'>";
+        //getting individual Poducast info
         foreach($json['podcasts'] as $podcast ){
         //first column displaying images
         $output .= "<section class='podSection'>";

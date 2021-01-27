@@ -146,17 +146,18 @@ a{
 /* ====== sytling table  text ===*/
 .count{
   width: 20% !important;
-  margin-left: -300px;
+  margin-left: -250px;
   background: transparent url('/images/circle.svg') no-repeat;
   background-position: left;
-  background-size: cover;
+  background-size: contain;
+  padding: 40px!important;
 }
 .number{
   font-size: 36px !important;
   text-align: center;
   font-family:  SpaceMono-BoldItalic !important;;
   color: #ffffff!important;
-
+  margin-left: -75px!important
 }
 
 
@@ -231,7 +232,8 @@ h5.episodes, .episodes:after{
    font-size: 36px !important;
    text-align: center;
    font-family:  SpaceMono-BoldItalic !important;;
-   color: #ffffff!important;
+   color: black !important;
+
 
  }
 
@@ -315,7 +317,7 @@ h5.episodes, .episodes:after{
       text-align: center;
       font-family:  SpaceMono-BoldItalic !important;;
       color: #ffffff!important;
-
+        margin-left: 5px!important
     }
 
     }
